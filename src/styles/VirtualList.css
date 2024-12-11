@@ -1,0 +1,46 @@
+/* src/styles/VirtualList.css */
+.virtual-list-container {
+    height: 500px;
+    /* Adjust this height based on your requirement */
+    overflow-y: auto;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.virtual-list-rows {
+    position: relative;
+    width: 100%;
+}
+
+.virtual-list-row {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.virtual-list-row:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Styling for Ticket Items */
+.ticket-item {
+    padding: 8px;
+}
+
+.ticket-item h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.ticket-item p {
+    margin: 4px;
+    font-size: 14px;
+    color: #555;
+}
