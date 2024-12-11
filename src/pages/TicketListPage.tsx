@@ -4,7 +4,7 @@ import TicketItem from "../components/TicketItem";
 import VirtualList from "../components/VirtualList";
 
 const TicketListPage: React.FC = () => {
-    const pageSize = 100; // Number of tickets per page
+    const pageSize = 1000; // Number of tickets per page
     const [visibleTickets, setVisibleTickets] = useState<any[]>([]); // Initially load an empty list of tickets
     const [currentPage, setCurrentPage] = useState(0); // Keep track of the current page
     const [isLoading, setIsLoading] = useState(false); // Loading state
